@@ -1,1 +1,45 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Kalkulator_By Dede</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <h1>Kalkulator BMI</h1>
+
+        <div>
+        <p class="paragraf">Berat badan ideal adalah impian semua orang.
+        Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat.
+        <br>Bagaimana denganmu? Yuk, hitung sekarang di Kalkulator BMI.</p><br>
+        </div>
+        
+        <div class="kolom">
+            <label for="pria">Pria</label>
+            <input type="radio" id="pria" name="gender" value="pria">
+            <label for="wanita">Wanita</label>
+            <input type="radio" id="wanita" name="gender" value="wanita">
+
+             <div>
+            <label for="berat">Berat Badan (kg):</label>
+            <input type="number" id="berat">
+             </div>
+            <div>
+                <label for="tinggi">Tinggi Badan (cm):</label>
+                <input type="number" id="tinggi">
+            </div>
+            <div>
+            <label for="usia">Usia (tahun):</label>
+            <input type="number" id="usia">
+            </div>
+            <button onclick="hitungBMI()"><b>Hitung BMI</b></button>
+            <div id="hasil"></div>
+        </div>
+
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
